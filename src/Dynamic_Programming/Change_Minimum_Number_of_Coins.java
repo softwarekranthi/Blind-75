@@ -1,6 +1,6 @@
 package Dynamic_Programming;
 
-public class Minimum_Number_of_Coins {
+public class Change_Minimum_Number_of_Coins {
 
    public static int minCoins(int[] coins, int amount){
       int[][] minCoins = new int[coins.length+1][amount+1];//grid has (no of denominations + 1) rows and (amount +1) columns

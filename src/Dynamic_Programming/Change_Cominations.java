@@ -1,8 +1,8 @@
 package Dynamic_Programming;
 
-public class Currency_Denominations {
+public class Change_Cominations {
 
-   public static int coinChange(int[] coins, int amount){
+   public static int numberOfCombinations(int[] coins, int amount){
       int[][] numberOfCombs = new int[coins.length+1][amount+1];//grid has (no of denominations + 1) rows and (amount +1) columns
       numberOfCombs[0] =firstRowCombs(amount);
       for(int i=1;i<=coins.length;i++){
@@ -27,7 +27,7 @@ public class Currency_Denominations {
 
 
    public static void main(String[] args){
-      int result = coinChange(new int[]{1,2,5},11);
+      int result = numberOfCombinations(new int[]{1,2,3},4);
       System.out.println("End");
    }
 }
