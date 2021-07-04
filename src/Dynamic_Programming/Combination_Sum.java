@@ -1,6 +1,7 @@
 package Dynamic_Programming;
 
 public class Combination_Sum {
+   //We are using memoisation
 
    public static  int combinationSum4(int[] nums, int target) {
       int[] cache = new int[target+1];//no issue
